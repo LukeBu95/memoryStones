@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Garamond;
+}
+
+
+header {
+    -webkit-text-stroke: 1px black;
+    color: white;
+    text-shadow:
+        3px 3px 0 #000,
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    background-image: url(/home/marie-luisehohnhold/Downloads/kopfsteinpflaster_bk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(173, 173, 173, 0.521);
+}
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color: rgba(211, 211, 211, 0.521);
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+/*-------------------------------------------------*/
+.nav ul {
+    list-style: none;
+    background-color: #444;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+  
+.nav li {
+    font-family: Garamond;
+    font-size: 5px;
+    line-height: 40px;
+    text-align: left;
+}
+  
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding-left: 15px;
+    border-bottom: 1px solid #888;
+    transition: .3s background-color;
+}
+  
+.nav a:hover {
+    background-color: #005f5f;
+}
+  
+.nav a.active {
+    background-color: #aaa;
+    color: #444;
+    cursor: default;
+}
+/*-------------------------------------------------*/  
+/* Sub Menus */
+.nav li li {
+    font-size: .8em;
+}
+
+.nav li {
+    width: 180px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1em;
+    display: inline-block;
+    margin-right: -4px;
+}
+  
+.nav a {
+      border-bottom: none;
+}
+  
+.nav > ul > li {
+    text-align: center;
+}
+  
+.nav > ul > li > a {
+    padding-left: 0;
+}
+/*-------------------------------------------------*/  
+/* Sub Menus */
+.nav li ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+}
+  
+.nav li:hover ul {
+    display: block;
+}
+  
+.nav li ul li {
+    display: block;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/*-------------------------------------------------*/
+
+
+@media (max-width: 600px) {
+    nav, article {
+        width: auto;
+        height: auto;
+    }
+}
