@@ -136,6 +136,11 @@ a:hover {
 }
 /*-------------------------------------------------*/
 
+p.content{
+    font-weight: bold;
+    font-size:30px;
+    font-style: italic
+}
 
 @media (max-width: 600px) {
     nav, article {
