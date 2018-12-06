@@ -54,7 +54,7 @@ if(isset($_GET['link']) && !empty($_GET['link'])) {
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-12>
+		<div class="col-md-12">
 			<nav class="navbar navbar-expand-md navbar-dark bg-secondary nav-justified">
 				<a class="navbar-brand" href="?link"> MEMORY STONES</a>
 				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="true" aria-label="Toggle navigation">
