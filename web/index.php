@@ -13,9 +13,40 @@
 </head>
 <body>
 
-<div class="container">
+<?php // Include der richtigen Datei
+
+if(isset($_GET['link']) && !empty($_GET['link'])) {
+	switch ($_GET['link']) {
+		case "story" :
+			$root = "Geschichte.html";
+			break;
+		case "gunter" :
+			$root = "gunter.html";
+			break;
+		case "download" :
+			$root = "link.html";
+			break;
+		case "cart" :
+			$root = "Stadtkarte.html";
+			break;
+		case "hannover" :
+			$root = "Stolpersteine_Hannover.html";
+			break;
+		default:
+			$root = "startup";
+			break;
+
+	}
+}else{
+	$root = "startup.html";
+}
+
+
+?>
+
+<div class="container-fluid">
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-12 right">
 			<header>
 				<h2 style="font-weight: bold">STOLPERSTEINE</h2>
 				<h4 style="font-weight: bold">Ein Mahnmal für die Opfer des 3. Reichs</h4>
@@ -23,14 +54,15 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-12">
-			<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-				<a class="navbar-brand" href=""> MEMORY STONES</a>
-				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggler="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle Navigation">
-					<span class="navbar-toggler-icon"></span></button>
+		<div class="col-md-12>
+			<nav class="navbar navbar-expand-md navbar-dark bg-secondary nav-justified">
+				<a class="navbar-brand" href="?link"> MEMORY STONES</a>
+				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="true" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
 				<div class="collapse navbar-collapse" id="navbarText">
-					<ul class="nav navbar-nav mr-auto">
+					<ul class="navbar-nav mr-auto">
 						<li class="nav-item mr-4">
 							<a class="nav-link" href="#"> &nbsp; </a>
 						</li>
@@ -40,10 +72,10 @@
 								<span class="caret"></span></a>
 							<ul class="dropdown-menu bg-secondary">
 								<li class="nav-item">
-									<a class="nav-link" href="Geschichte.html">Über das Projekt</a>
+									<a class="nav-link" href="?link=story">Über das Projekt</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="gunter.html">Über Gunter Demnig</a>
+									<a class="nav-link" href="?link=gunter">Über Gunter Demnig</a>
 								</li>
 							</ul>
 						</li>
@@ -52,37 +84,42 @@
 								<span class="caret"></span></a>
 							<ul class="dropdown-menu bg-secondary">
 								<li class="nav-item">
-									<a class="nav-link" href="Stolpersteine_Hannover.html">Hannover</a>
+									<a class="nav-link" href="?link=hannover">Hannover</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link">Stolperstein Guide</a>
+									<a class="nav-link" href="?link=cart">Stolperstein Guide</a>
 								</li>
 							</ul>
 						</li>
-						<li class="nav-item mr-4"><a class="nav-link" href="link.html">Downloads</a></li>
+						<li class="nav-item mr-4"><a class="nav-link" href="?link=download">Downloads</a></li>
 					</ul>
 					<span class="navbar-text">&copy; 2018</span>
 				</div>
 			</nav>
 		</div>
+	</div>
 
+	<div class="row p-4">
 
 		<div class="col-md-12">
 			<!-- Content -->
-			<div class="container">
+			<div class="container-fluid">
 				<?php
-				 include "startup.html";
+				include $root;
 				?>
 			</div>
 		</div>
+	</div>
+	<div class="row">
+
 		<div class="col-md-12">
 			<footer> School Project for the MMBBS IT Course</footer>
 		</div>
-
 	</div>
+</div>
 
-	<script src="js/jquery-3.1.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-	<script src="js/bootstrap/bootstrap.js"></script>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="js/bootstrap/bootstrap.js"></script>
 </body>
 </html>
