@@ -9,6 +9,8 @@
 	<!-- Bootstrap CSS laden -->
 	<link rel="stylesheet" href="css/bootstrap/bootstrap.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
 
 </head>
 <body>
@@ -72,10 +74,10 @@ if(isset($_GET['link']) && !empty($_GET['link'])) {
 								<span class="caret"></span></a>
 							<ul class="dropdown-menu bg-secondary">
 								<li class="nav-item">
-									<a class="nav-link" href="?link=story">Über das Projekt</a>
+									<a class="nav-link" href="?link=story">Projekt</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="?link=gunter">Über Gunter Demnig</a>
+									<a class="nav-link" href="?link=gunter">Gunter Demnig</a>
 								</li>
 							</ul>
 						</li>
@@ -93,7 +95,7 @@ if(isset($_GET['link']) && !empty($_GET['link'])) {
 						</li>
 						<li class="nav-item mr-4"><a class="nav-link" href="?link=download">Downloads</a></li>
 					</ul>
-					<span class="navbar-text">&copy; 2018</span>
+					<span class="navbar-text">&copy; 2019</span>
 				</div>
 			</nav>
 		</div>
