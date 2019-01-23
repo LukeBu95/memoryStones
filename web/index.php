@@ -71,10 +71,11 @@ if (isset($_GET['link']) && !empty($_GET['link'])) {
                     <span class="caret"></span></a>
                 <ul class="dropdown-menu bg-secondary">
                     <li class="nav-item">
-                        <a class="nav-link" href="?link=story">Projekt</a>
+                        <a class="nav-link" href="?link=story"><i class="fa fa-bars" aria-hidden="true"></i>&nbsp;Projekt</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="?link=gunter">Gunter Demnig</a>
+                        <a class="nav-link" href="?link=gunter"><i class="fa fa-database" aria-hidden="true"></i>
+                            &nbsp;Gunter Demnig</a>
                     </li>
                 </ul>
             </li>
@@ -85,10 +86,11 @@ if (isset($_GET['link']) && !empty($_GET['link'])) {
                     <span class="caret"></span></a>
                 <ul class="dropdown-menu bg-secondary">
                     <li class="nav-item">
-                        <a class="nav-link" href="?link=hannover">Hannover</a>
+                        <a class="nav-link" href="?link=hannover"><i class="fa fa-bookmark" aria-hidden="true"></i>&nbsp;Hannover</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="?link=cart">Stolperstein Guide</a>
+                        <a class="nav-link" href="?link=cart"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                            &nbsp;Stolperstein Guide</a>
                     </li>
                 </ul>
             </li>
