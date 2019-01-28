@@ -71,11 +71,10 @@ if (isset($_GET['link']) && !empty($_GET['link'])) {
                     <span class="caret"></span></a>
                 <ul class="dropdown-menu bg-secondary">
                     <li class="nav-item">
-                        <a class="nav-link" href="?link=story"><i class="fa fa-bars" aria-hidden="true"></i>&nbsp;Projekt</a>
+                        <a class="nav-link" href="?link=story"><i class="fa fa-bars" aria-hidden="true"></i>&nbsp;Das Projekt</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="?link=gunter"><i class="fa fa-database" aria-hidden="true"></i>
-                            &nbsp;Gunter Demnig</a>
+                        <a class="nav-link" href="?link=gunter"><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;Gunter Demnig</a>
                     </li>
                 </ul>
             </li>
@@ -90,11 +89,11 @@ if (isset($_GET['link']) && !empty($_GET['link'])) {
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="?link=cart"><i class="fa fa-map-marker" aria-hidden="true"></i>
-                            &nbsp;Stolperstein Guide</a>
+                            &nbsp;Guide</a>
                     </li>
                 </ul>
             </li>
-            <li class="nav-item mr-4"><a class="nav-link" href="?link=download"> Download</a></li>
+            <li class="nav-item mr-4"><a class="nav-link" href="?link=download"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Download</a></li>
         </ul>
         <span class="navbar-text">&copy; 2019</span>
     </div>
