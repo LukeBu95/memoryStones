@@ -35,6 +35,9 @@ if (isset($_GET['link']) && !empty($_GET['link'])) {
         case "hannover" :
             $root = "Stolpersteine_Hannover.html";
             break;
+        case "contact" :
+            $root = "kontakt.html";
+            break;
         default:
             $root = "startup";
             break;
@@ -88,12 +91,13 @@ if (isset($_GET['link']) && !empty($_GET['link'])) {
                         <a class="nav-link" href="?link=hannover"><i class="fa fa-bookmark" aria-hidden="true"></i>&nbsp;Hannover</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="?link=cart"><i class="fa fa-map-marker" aria-hidden="true"></i>
-                            &nbsp;Guide</a>
+                        <a class="nav-link" href="?link=cart"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;Guide</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="?link=download"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Download</a>
                     </li>
                 </ul>
             </li>
-            <li class="nav-item mr-4"><a class="nav-link" href="?link=download"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Download</a></li>
+            <li class="nav-item mr-4"><a class="nav-link" href="?link=contact"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;Kontakt</a></li>
         </ul>
         <span class="navbar-text">&copy; 2019</span>
     </div>
