@@ -97,7 +97,7 @@ if (isset($_GET['link']) && !empty($_GET['link'])) {
                     </li>
                 </ul>
             </li>
-            <li class="nav-item mr-4"><a class="nav-link" href="?link=contact"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;Kontakt</a></li>
+            <li class="nav-item mr-4"><a class="nav-link" href="?link=contact"><i class="fa fa-pencil" style="display:inline;" aria-hidden="true"></i>&nbsp;Kontakt</a></li>
         </ul>
         <span class="navbar-text">&copy; 2019</span>
     </div>
