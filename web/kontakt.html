@@ -1,50 +1,90 @@
-<!--<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
--->
+<form action="http://www.formular-chef.de/fc.cgi" method="post" enctype="multipart/form-data">
+ 
 
+    <input type="hidden" name="betreff" value="Ein Besucher hat Ihr Formular ausgefüllt ">
+    <!-- Der URL zum Antwortseiten-Template: -->
+    <input type="hidden" name="template_antwort" value="http://">
+    <!-- Der URL zum Fehlerseiten-Template: -->
+    <input type="hidden" name="template_fehler" value="http://">
+    <input type="hidden" name="empfaenger" value="FIAE18J.hohnhold@mm-bbs.de, FIAE18J.buttke@mm-bbs.de"/>
+    <input type="hidden" name="absender_erweitert" value="##vorname## ##nachname##">
+     
+<html>
 
-<div class="container">
-	<div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <div class="well well-sm">
-          <form class="form-horizontal" action="" method="post">
-          <fieldset>
-            <legend class="text-center">Kontaktformular</legend>
+    <body>
     
-            <!-- Name input-->
-            <div class="form-group">
-              <label class="col-md-3 control-label" for="name">Name:</label>
-              <div class="col-md-9">
-                <input id="name" name="name" type="text" placeholder="Max Mustermann" class="form-control">
-              </div>
-            </div>
+        <div class="container">
     
-            <!-- Email input-->
-            <div class="form-group">
-              <label class="col-md-3 control-label" for="email">E-Mail:</label>
-              <div class="col-md-9">
-                <input id="email" name="email" type="text" placeholder="max.mustermann@beispiel.de" class="form-control">
-              </div>
-            </div>
+            <div class="row">
     
-            <!-- Message body -->
-            <div class="form-group">
-              <label class="col-md-3 control-label" for="message">Nachricht:</label>
-              <div class="col-md-9">
-                <textarea class="form-control" id="message" name="message" placeholder="Gib deine Nachricht ein..." rows="5"></textarea>
-              </div>
-            </div>
+                <div class="col-xl-8 offset-xl-2 py-5">
     
-            <!-- Form actions -->
-            <div class="form-group">
-              <div class="col-md-12 text-right">
-                <button type="submit" class="btn btn-primary btn-lg">Absenden</button>
-              </div>
+                    <div class="messages"></div>
+    
+                        <div class="controls">
+    
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="vorname">Vorname *</label>
+                                        <input id="vorname" type="text" name="vorname" class="form-control" placeholder="Bitte gib deinen Vornamen ein" required="required" data-error="Vorname benötigt.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="nachname">Nachname *</label>
+                                        <input id="nachname" type="text" name="nachname" class="form-control" placeholder="Bitte gib deinen Nachnamen ein" required="required" data-error="Nachname benötigt.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email">E-Mail *</label>
+                                        <input id="email" type="email" name="email" class="form-control" placeholder="Bitte gib deine E-Mail ein" required="required" data-error="Gültige E-Mail Adresse benötigt.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="betreff">Betreff *</label>
+                                        <select id="betreff" name="betreff" class="form-control" required="required" data-error="Bitte gib einen Betreff an.">
+                                            <option value=""></option>
+                                            <option value="Fragen zum Projekt">Fragen zum Projekt</option>
+                                            <option value="Kritik">Kritik</option>
+                                            <option value="Sonstiges">Sonstiges</option>
+                                        </select>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="nachricht">Nachricht *</label>
+                                        <textarea id="nachricht" name="nachricht" class="form-control" placeholder="Deine Nachricht" rows="4" required="required" data-error="Bitte hinterlasse hier deine Nachricht."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" class="btn btn-success btn-send" value="Absenden">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="text-muted">
+                                        <strong>*</strong> Diese Felder werden benötigt.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-          </fieldset>
-          </form>
         </div>
-      </div>
-	</div>
-</div>
+    </body>
+    <center>
+        (Formular-Service vom <a href="http://www.formular-chef.de/index.cgi" target="_blank">Formular-Chef</a>)
+    </center>
+</html>
