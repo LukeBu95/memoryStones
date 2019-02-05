@@ -36,7 +36,7 @@ if (isset($_GET['link']) && !empty($_GET['link'])) {
             $root = "Stolpersteine_Hannover.html";
             break;
         case "contact" :
-            $root = "kontakt.html";
+            $root = "mail.php";
             break;
         default:
             $root = "startup";
