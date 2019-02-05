@@ -11,11 +11,9 @@
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/font-awesome.min.css">
-
-
 </head>
-<body>
 
+<body>
 <?php // Include der richtigen Datei
 
 if (isset($_GET['link']) && !empty($_GET['link'])) {
@@ -49,10 +47,9 @@ if (isset($_GET['link']) && !empty($_GET['link'])) {
 
 
 ?>
-
 <header>
-    <h2 style="font-weight: bold">STOLPERSTEINE</h2>
-    <h4 style="font-weight: bold">Ein Mahnmal für die Opfer des 3. Reichs</h4>
+    <h2>STOLPERSTEINE</h2>
+    <h4>Ein Mahnmal für die Opfer des 3. Reichs</h4>
 </header>
 <nav class="navbar navbar-expand-md navbar-dark bg-secondary nav-justified">
     <a class="navbar-brand" href="?link"> MEMORY STONES</a>
