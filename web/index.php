@@ -58,7 +58,7 @@ if (isset($_GET['link']) && !empty($_GET['link'])) {
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarText">
+    <div class="collapse navbar-collapse text-left" id="navbarText">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item mr-4">
                 <a class="nav-link" href="#"> &nbsp; </a>
