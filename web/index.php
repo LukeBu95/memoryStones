@@ -48,7 +48,7 @@ if (isset($_GET['link']) && !empty($_GET['link'])) {
 
 ?>
 <header>
-    <h2>STOLPERSTEINE</h2>
+    <h2 class="Display-2">STOLPERSTEINE</h2>
     <h4>Ein Mahnmal für die Opfer des 3. Reichs</h4>
 </header>
 <nav class="navbar navbar-expand-md navbar-dark bg-secondary nav-justified">
