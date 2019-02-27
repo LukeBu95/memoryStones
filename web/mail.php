@@ -62,7 +62,7 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <p class="text-muted">
-                                            <strong>*</strong> Diese Felder werden benötigt.</p>
+                                            <strong>*</strong> Diese Felder werden benötigt.<br>Ihre Daten werden nicht zur Weiterverarbeitung verwendet.</p>
                                     </div>
                                 </div>
                             </div>
