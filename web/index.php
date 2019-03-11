@@ -60,11 +60,11 @@ if (isset($_GET['link']) && !empty($_GET['link'])) {
 
     <div class="collapse navbar-collapse text-left" id="navbarText">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item mr-4">
+            <li class="nav-item mr-5 ml-5">
                 <a class="nav-link" href="#"> &nbsp; </a>
             </li>
 
-            <li class="dropdown mr-4">
+            <li class="dropdown mr-5">
                 <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true"
                    aria-expanded="false"><i class="fa fa-info" aria-hidden="true"></i>
                     &nbsp;About
@@ -78,7 +78,7 @@ if (isset($_GET['link']) && !empty($_GET['link'])) {
                     </li>
                 </ul>
             </li>
-            <li class="dropdown mr-4">
+            <li class="dropdown mr-5">
                 <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true"
                    aria-expanded="false"><i class="fa fa-archive" aria-hidden="true"></i>
                     &nbsp;Stolpersteine
@@ -94,7 +94,7 @@ if (isset($_GET['link']) && !empty($_GET['link'])) {
                     </li>
                 </ul>
             </li>
-            <li class="nav-item mr-4"><a class="nav-link" href="?link=contact"><i class="fa fa-pencil" style="display:inline;" aria-hidden="true"></i>&nbsp;Kontakt</a></li>
+            <li class="nav-item mr-5"><a class="nav-link" href="?link=contact"><i class="fa fa-pencil" style="display:inline;" aria-hidden="true"></i>&nbsp;Kontakt</a></li>
         </ul>
         <span class="navbar-text">&copy; 2019</span>
     </div>
