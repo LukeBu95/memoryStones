@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<script language="javascript" type="text/javascript" src="js/form-valid.js"></script>
 </head>
 
 <body>
@@ -34,7 +36,7 @@ if (isset($_GET['link']) && !empty($_GET['link'])) {
             $root = "Stolpersteine_Hannover.html";
             break;
         case "contact" :
-            $root = "mail.php";
+            $root = "mail.html";
             break;
         default:
             $root = "startup";
