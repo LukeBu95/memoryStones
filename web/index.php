@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
-	<script language="javascript" type="text/javascript" src="js/form-valid.js"></script>
+	<script language="javascript" type="text/javascript" src="js/custom.js"></script>
 </head>
 
 <body>
