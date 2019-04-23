@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
-	<script language="javascript" type="text/javascript" src="js/form-valid.js"></script>
 </head>
 
 <body>
@@ -53,7 +52,7 @@ if (isset($_GET['link']) && !empty($_GET['link'])) {
     <h2 class="Display-2">STOLPERSTEINE</h2>
     <h4>Ein Mahnmal für die Opfer des 3. Reichs</h4>
 </header>
-<nav class="navbar navbar-expand-md navbar-dark bg-secondary nav-justified">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark nav-justified">
     <a class="navbar-brand" href="?link"> MEMORY STONES</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText"
             aria-controls="navbarText" aria-expanded="true" aria-label="Toggle navigation">
@@ -104,9 +103,9 @@ if (isset($_GET['link']) && !empty($_GET['link'])) {
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-12 right">
+        <div class="col-md-12 right bg-secondary text-white">
 
-            <div class="row p-4">
+            <div class="row p-5">
 
                 <div class="col-md-12">
                     <!-- Content -->
@@ -120,17 +119,20 @@ if (isset($_GET['link']) && !empty($_GET['link'])) {
             <div class="row">
 
                 <div class="col-md-12">
-                    <footer> School Project for the MMBBS IT Course</footer>
+                    <footer class="bg-dark"> School Project for the MMBBS IT Course</footer>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
+
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
         integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
         crossorigin="anonymous"></script>
 <script src="js/bootstrap/bootstrap.js"></script>
+<script type="text/javascript" src="js/form-valid.js"></script>
+
 </body>
 </html>
