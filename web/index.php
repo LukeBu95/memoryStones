@@ -103,7 +103,7 @@ if (isset($_GET['link']) && !empty($_GET['link'])) {
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-12 right bg-secondary text-white">
+        <div class="col-md-12 right bg-secondary text-light">
 
             <div class="row p-5">
 
