@@ -2,7 +2,7 @@
 (function() {
 
 	$('.carousel').carousel({
-		interval: 500
+		interval: 2500
 	})
 
 	'use strict';

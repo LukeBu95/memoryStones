@@ -64,8 +64,12 @@ a:hover {
 }
 /*-------------------------------------------------*/
 
+ul{
+	list-style:square
+}
+
 li:hover{
-	color: black !important;
+	color: white !important;
 }
 
 p.content{
